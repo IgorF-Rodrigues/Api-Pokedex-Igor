@@ -1,0 +1,64 @@
+body {
+    background-color: #FFF7E9;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+@media  screen and (min-width: 420px) {
+    .container-pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .caixa {
+        padding: 5px;
+        height: 300px;
+    }
+
+    .nome{
+        font-size: 1em;
+    }
+
+    .classes {
+        flex-direction: column;
+    }
+
+}
+
+@media  screen and (min-width: 720px) {
+    .titulo {
+        font-size: 3em;
+    }
+
+    .container-titulo {
+        flex-direction: row;
+    }
+
+    .container-pokemons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto;
+    }
+
+    .caixa {
+        height: 350px;
+    }
+
+    .classes {
+        flex-direction: row;
+    }
+
+}
+
+.remove {
+    display: none;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-pokemon {
+    width: 90vw;
+}

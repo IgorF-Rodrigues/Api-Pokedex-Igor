@@ -1,0 +1,26 @@
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+
+.btn-ger {
+    background: #FFF7E9;
+    border: 2px solid #3B44F6;
+    border-radius: 3px;
+    color: #0002A1;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .6em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btn-ger:hover {
+    background-color: #F7EC09;
+}
+
+.btn-ger:checked {
+    background-color: #F7EC09;
+}

@@ -1,0 +1,27 @@
+.container-titulo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo {
+    color: #F7EC09;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px #0002A1;
+    -webkit-text-stroke: #3B44F6;
+    -webkit-text-stroke-width: 2px;
+}
+
+.pesquisa {
+    border: 3px solid #3B44F6;
+    border-radius: 3px;
+    padding: 0.2em 1em;
+    background-color: #FFF7E9;
+}
+
+.pesquisa::placeholder {
+    color: #0002A1;
+}

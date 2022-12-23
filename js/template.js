@@ -8,26 +8,26 @@ function criarTemplate(pokemon) {
         let especiePokemon2 = pokemon.types[1].type.name;
 
         secao.innerHTML += `
-            <div class="caixa ${especiePokemon1} ${especiePokemon2}">
+            <li class="caixa ${especiePokemon1} ${especiePokemon2}">
                 <h1 class="nome">${nomeFormatado}</h1>
-                <img src="${imgPokemon}" alt="imagem do pokémon ${nomePokemon}" class="imagem-pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="imagem do pokémon ${nomePokemon}" class="imagem-pokemon">
                 <p class="numeracao">n° ${pokemon.id}</p>
                 <div class="classes">
                     <p class="classe">${especiePokemon1}</p>
                     <p class="classe2">${especiePokemon2}</p>
                 </div>
-            </div>
+            </li>
             `
     } else {
         secao.innerHTML += `
-            <div class="caixa ${especiePokemon1}">
+            <li class="caixa ${especiePokemon1}">
                 <h1 class="nome">${nomeFormatado}</h1>
-                <img src="${imgPokemon}" alt="imagem do pokémon ${nomePokemon}" class="imagem-pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="imagem do pokémon ${nomePokemon}" class="imagem-pokemon">
                 <p class="numeracao">n° ${pokemon.id}</p>
                 <div class="classes">
                     <p class="classe">${especiePokemon1}</p>
                 </div>
-            </div>
+            </li>
             `
     };
 };

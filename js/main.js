@@ -9,7 +9,7 @@ async function carregaAPI(id, geracao) {
             let link = await fetch(api);
             var pokemon = await link.json();
 
-            criarTemplate(pokemon);
+            criarTemplate(id, pokemon);
         } catch {
             throw new Error(`Não foi possivel buscar o pokémon do id ${id}`)
         }

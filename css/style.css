@@ -40,10 +40,6 @@ body {
         margin: 10px auto;
     }
 
-    .caixa {
-        height: 350px;
-    }
-
     .classes {
         flex-direction: row;
     }

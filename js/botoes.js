@@ -32,10 +32,10 @@ botoes.forEach(btn => {
                 break
             case '7ª Geração':
                 id = 722;
-                geracao = 807;
+                geracao = 809;
                 break
             case '8ª Geração':
-                id = 808;
+                id = 810;
                 geracao = 905;
                 break
         };

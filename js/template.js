@@ -1,4 +1,4 @@
-function criarTemplate(pokemon) {  
+function criarTemplate(id, pokemon) {  
     let nomePokemon = pokemon.species.name;
     let nomeFormatado = nomePokemon[0].toUpperCase() + nomePokemon.substring(1);
     let imgPokemon = pokemon.sprites.front_default;

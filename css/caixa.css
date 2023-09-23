@@ -38,3 +38,41 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 780px) {
+    .container-pokemons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 10px auto;
+        width: 90%;
+    }
+    
+    .caixa {
+        background-color: #5F6F94;
+        border: 5px solid #D7C0AE;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        text-align: center;
+        width: 23%;
+    }
+
+    .nome {
+        font-size: 8px;
+    }
+    
+    .numeracao, .classes {
+        font-size: 6px;
+    }
+    
+    .nome, .numeracao, .classes {
+        color: white;
+    }
+    
+    .imagem-pokemon {
+        align-self: center;
+        width: 30%;
+    }
+}

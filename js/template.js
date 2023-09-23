@@ -1,4 +1,6 @@
-function criarTemplate(id, pokemon) {  
+function criarTemplate(pokemons) {  
+    pokemons.map(pokemon => {
+    let id = pokemon.id;
     let nomePokemon = pokemon.species.name;
     let nomeFormatado = nomePokemon[0].toUpperCase() + nomePokemon.substring(1);
     let imgPokemon = pokemon.sprites.front_default;
@@ -29,5 +31,7 @@ function criarTemplate(id, pokemon) {
                 </div>
             </li>
             `
-    };
+        };
+    })
 };
+

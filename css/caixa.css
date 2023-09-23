@@ -64,7 +64,7 @@
     }
     
     .numeracao, .classes {
-        font-size: 8px;
+        font-size: 6px;
     }
     
     .nome, .numeracao, .classes {
@@ -73,6 +73,6 @@
     
     .imagem-pokemon {
         align-self: center;
-        width: 45%;
+        width: 50%;
     }
 }

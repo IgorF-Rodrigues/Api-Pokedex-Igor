@@ -2,8 +2,7 @@ const secao = document.querySelector('.container-pokemons');
 let listaPokemon = new Array;
 
 carregaAPI()
-async function carregaAPI() {;
-
+async function carregaAPI() {
     for(id = 1; id <= 905; id++) {
         let api = `https://pokeapi.co/api/v2/pokemon/${id}`
         try {

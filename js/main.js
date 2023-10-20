@@ -8,8 +8,8 @@ async function carregaAPI() {
         try {
             let link = await fetch(api);
             var pokemon = await link.json();
-
             listaPokemon.push(pokemon);
+            console.log(listaPokemon)
         } catch {
             throw new Error(`Não foi possivel buscar o pokémon do id ${id}`)
         }       

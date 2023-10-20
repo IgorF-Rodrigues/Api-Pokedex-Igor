@@ -1,11 +1,10 @@
 const secao = document.querySelector('.container-pokemons');
-let geracao = 0;
-let id = 1;
+let listaPokemon = new Array;
 
-async function carregaAPI(id, geracao) {
-    const listaPokemon = [];
+carregaAPI()
+async function carregaAPI() {;
 
-    for(id; id <= geracao; id++) {
+    for(id = 1; id <= 905; id++) {
         let api = `https://pokeapi.co/api/v2/pokemon/${id}`
         try {
             let link = await fetch(api);
@@ -16,5 +15,4 @@ async function carregaAPI(id, geracao) {
             throw new Error(`Não foi possivel buscar o pokémon do id ${id}`)
         }       
     };
-    criarTemplate(listaPokemon);
 };

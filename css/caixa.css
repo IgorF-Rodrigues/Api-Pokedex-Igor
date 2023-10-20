@@ -8,13 +8,14 @@
 
 .caixa {
     background-color: #5F6F94;
-    border: 5px solid #D7C0AE;
+    border: 5px solid #000;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     padding: 10px;
     text-align: center;
     width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
 .nome {

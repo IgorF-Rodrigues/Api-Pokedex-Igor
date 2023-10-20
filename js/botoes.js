@@ -7,39 +7,38 @@ botoes.forEach(btn => {
 
         switch(e.target.textContent) {
             case '1ª Geração': 
-                id = 1;
-                geracao = 151;
+                lista = listaPokemon.slice(0, -754);
+                criarTemplate(lista);
                 break
             case '2ª Geração':
-                id = 152;
-                geracao = 251;
+                lista = listaPokemon.slice(151,-654);
+                criarTemplate(lista);
                 break
             case '3ª Geração':
-                id = 252;
-                geracao = 386;
+                lista = listaPokemon.slice(251,-519);
+                criarTemplate(lista);
                 break
             case '4ª Geração':
-                id = 387;
-                geracao = 493;
+                lista = listaPokemon.slice(386,-411);
+                criarTemplate(lista);
                 break
             case '5ª Geração':
-                id = 494;
-                geracao = 649;
+                lista = listaPokemon.slice(494,-256);
+                criarTemplate(lista);
                 break
             case '6ª Geração':
-                id = 650;
-                geracao = 721;
+                lista = listaPokemon.slice(649,-184);
+                criarTemplate(lista);
                 break
             case '7ª Geração':
-                id = 722;
-                geracao = 809;
+                lista = listaPokemon.slice(721,-96);
+                criarTemplate(lista);
                 break
             case '8ª Geração':
-                id = 810;
-                geracao = 905;
+                lista = listaPokemon.slice(809);
+                criarTemplate(lista);
                 break
         };
-        carregaAPI(id, geracao)
     });
 });
 

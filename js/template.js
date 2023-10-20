@@ -3,7 +3,6 @@ function criarTemplate(pokemons) {
     let id = pokemon.id;
     let nomePokemon = pokemon.species.name;
     let nomeFormatado = nomePokemon[0].toUpperCase() + nomePokemon.substring(1);
-    let imgPokemon = pokemon.sprites.front_default;
     let especiePokemon1 = pokemon.types[0].type.name;
   
     if(pokemon.types.length == 2) {

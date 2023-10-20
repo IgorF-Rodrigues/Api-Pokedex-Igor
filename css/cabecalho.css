@@ -16,12 +16,22 @@
 }
 
 .pesquisa {
-    border: 3px solid #3B44F6;
-    border-radius: 3px;
-    padding: 0.2em 1em;
-    background-color: #FFF7E9;
+    padding: 10px;
+    border: 1px solid #E3350D;
+    border-radius: 5px;
+    font-family: "Press Start 2P", sans-serif;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    max-width: 300px;
+}
+
+.pesquisa:focus {
+    outline: none;
+    border: 2px solid #0073E6;
 }
 
 .pesquisa::placeholder {
     color: #0002A1;
 }
+

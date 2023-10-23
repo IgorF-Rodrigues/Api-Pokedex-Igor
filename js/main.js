@@ -12,6 +12,7 @@ async function carregaAPI() {
             console.log(listaPokemon)
         } catch {
             throw new Error(`Não foi possivel buscar o pokémon do id ${id}`)
-        }       
+        }
+        console.log(id);
     };
 };
